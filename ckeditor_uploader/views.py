@@ -132,7 +132,6 @@ def get_image_files(user=None, path=''):
 
     try:
         storage_list = storage.listdir(browse_path)
-        print("Storage List {}".format(storage_list))
     except NotImplementedError:
         return
     except OSError:
